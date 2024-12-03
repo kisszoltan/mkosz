@@ -1,6 +1,9 @@
 import "@/styles/globals.css";
+import { env } from "process";
+
 import { Metadata, Viewport } from "next";
 import clsx from "clsx";
+import Clarity from "@microsoft/clarity";
 
 import { Providers } from "./providers";
 
@@ -32,6 +35,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  Clarity.init(env.MICROSOFT_CLARITY!);
+
   return (
     <html suppressHydrationWarning lang="en">
       <head />
