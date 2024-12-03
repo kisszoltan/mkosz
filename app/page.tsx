@@ -3,7 +3,7 @@ import { Calculator } from "@/components/calculator";
 
 export default function Home() {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
+    <section className="flex flex-col items-center justify-center py-8 md:py-10">
       <div className="inline-block text-center max-w-xl justify-center">
         <span className={title()}>Számold ki a </span>
         <span className={title({ color: "violet" })}>M</span>
@@ -14,12 +14,16 @@ export default function Home() {
         <span className={title()}>rák </span>
         <span className={title({ color: "violet" })}>sz</span>
         <span className={title()}>ámát</span>
-        <br />
-        <div className={subtitle({ class: "mt-4" })}>
-          Ha nem megy a matek, kattintani azért csak tudsz párat.
-        </div>
       </div>
-      <Calculator className="mt-6" />
+      <div
+        className={subtitle({
+          class: "mt-4 text-center max-w-md",
+          fullWidth: true,
+        })}
+      >
+        Még ha nem is megy a matek, kattintani azért csak tudsz párat.
+      </div>
+      <Calculator className="mt-10" />
     </section>
   );
 }
