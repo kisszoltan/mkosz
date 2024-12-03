@@ -1,5 +1,5 @@
 import { title, subtitle } from "@/components/primitives";
-import { CalculatorI18n } from "@/components/calculator-i18n";
+import { Calculator } from "@/components/calculator";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
           Ha nem megy a matek, kattintani azért csak tudsz párat.
         </div>
       </div>
-      <CalculatorI18n className="mt-6" />
+      <Calculator className="mt-6" />
     </section>
   );
 }
