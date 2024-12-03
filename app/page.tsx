@@ -21,7 +21,7 @@ export default function Home() {
           fullWidth: true,
         })}
       >
-        Még ha nem is megy a matek, kattintani azért csak tudsz párat.
+        Még ha nehéz is a matek, kattintani azért csak lehet párat.
       </div>
       <Calculator className="mt-10" />
     </section>
